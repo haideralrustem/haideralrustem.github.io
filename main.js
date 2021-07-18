@@ -488,13 +488,13 @@ var HomeComponent = /** @class */ (function () {
                 $(this).css({ "opacity": "0" });
             }
         });
+        //....................
         $(window).scroll(function () {
             var base = 0;
             $(".scroll-in-show").each(function (index) {
                 var top_of_window = $(window).scrollTop();
                 var top_of_object = $(this).offset().top;
-                if (top_of_window >= top_of_object - 590) {
-                    console.log(top_of_window, ' >= ', top_of_object);
+                if (top_of_window >= top_of_object - 550) {
                     $(this).css({ "opacity": "1" });
                 }
                 else {
@@ -505,7 +505,7 @@ var HomeComponent = /** @class */ (function () {
             $(".scroll-in-show.earlier").each(function (index) {
                 var top_of_window = $(window).scrollTop();
                 var top_of_object = $(this).offset().top;
-                if (top_of_window >= top_of_object - 720) {
+                if (top_of_window >= top_of_object - 550) {
                     $(this).css({ "opacity": "1" });
                 }
                 else {
