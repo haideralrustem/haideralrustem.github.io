@@ -493,7 +493,7 @@ var HomeComponent = /** @class */ (function () {
             $(".scroll-in-show").each(function (index) {
                 var top_of_window = $(window).scrollTop();
                 var top_of_object = $(this).offset().top;
-                if (top_of_window >= top_of_object - 700) {
+                if (top_of_window >= top_of_object - 590) {
                     console.log(top_of_window, ' >= ', top_of_object);
                     $(this).css({ "opacity": "1" });
                 }
